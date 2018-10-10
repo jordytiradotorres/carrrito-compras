@@ -1,0 +1,66 @@
+extends templates/template
+include mixins/card
+
+block main
+    .container
+        .header
+            .row.justify-content-between
+                .col-4
+                    a(href="/"): img.d-block.img-fluid(src="./img/logo_universidad.png", alt="logo")
+                .col-4.text-right.pt-4
+                    a.imagen-carrito#imagen-carrito(href="#")
+                        img.carrito#carrito(src="./img/shopping-cart.svg", alt="carrito")
+                        div.carrito-de-compras#carrito-compras
+                            table
+                                thead
+                                    tr
+                                        th Imagen
+                                        th Nombre
+                                        th Precio
+                                tbody
+                            button.btn.btn-block.btn-outline-secondary.mt-3.text-uppercase#vaciar-carrito(type="button") Vaciar Carrito
+    |
+    include ../../dev/pug/includes/banner
+    |
+    section.containerDetalles
+        .container
+            .row.justify-content-md-between.text-center.align-items-center
+                .col-12.col-md-4.mb-4.mb-md-0
+                    .detalles.d-flex.align-items-center.flex-column.flex-md-row.justify-content-center
+                        figure.pr-0.pr-md-4
+                            img(src="img/focus.svg", alt="detalle 1")
+                        .detalles__infor
+                            p.m-0 20.000 cursos en línea
+                            p.m-0 Explora los temas mas recientes
+                .col-12.col-md-4.mb-4.mb-md-0
+                    .detalles.d-flex.align-items-center.flex-column.flex-md-row.justify-content-center
+                        figure.pr-0.pr-md-4
+                            img(src="img/target.svg", alt="detalle 2")
+                        .detalles__infor
+                            p.m-0 Instructores Expertos
+                            p.m-0 Aprende con distintos estilos
+                .col-12.col-md-4.mb-4.mb-md-0
+                    .detalles.d-flex.align-items-center.flex-column.flex-md-row.justify-content-center
+                        figure.pr-0.pr-md-4
+                            img(src="img/clock.svg", alt="detalle 3")
+                        .detalles__infor
+                            p.m-0 Acceso de por vida
+                            p.m-0 Aprende a tu ritmo
+    |
+    main.main-container
+        h1 Cursos En Línea
+        section.courses#cursos
+            .container
+                .row
+                    +card(`img/angular.png`, 'angular', 'Curso de Angular 6', 'Jordy Tirado', 300, 1)
+                    +card(`img/bootstrap.jpeg`, 'bootstrap', 'Curso de Bootstrap 4', 'Jordy Tirado', 150, 2)
+                    +card(`img/foundation.jpg`, 'foundation', 'Curso de Foundation 6', 'Jordy Tirado', 200, 3)
+                    +card(`img/html5.jpg`, 'html5', 'Curso de Html5', 'Jordy Tirado', 100, 4)
+                    +card(`img/js.jpg`, 'javascript', 'Curso de Javascript', 'Jordy Tirado', 250, 5)
+                    +card(`img/reactjs.jpg`, 'reactjs', 'Curso de ReactJS', 'Jordy Tirado', 300, 6)
+                    +card(`img/sass.jpg`, 'sass', 'Curso de Sass', 'Jordy Tirado', 150, 7)
+                    +card(`img/css3.jpg`, 'css3', 'Curso de CSS3', 'Jordy Tirado', 200, 8)
+                    +card(`img/vuejs.jpg`, 'vuejs', 'Curso de VueJS', 'Jordy Tirado', 300, 9)
+            
+
+    

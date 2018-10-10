@@ -1,0 +1,19 @@
+include button
+mixin card(img, alt, title, autor, precio, n)
+    .col-12.col-sm-6.col-lg-4
+        .card#card.mb-5
+            img.card-img-top.img-fluid.d-block(src= img, alt= alt)
+            .card-body
+                h3.card-title= title
+                p.card-text= autor
+                .star.mb-2
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                .card-precio.d-flex.justify-content-between
+                    p.card-precio__original= precio
+                    p.card-precio__descuento $15
+                +button('Agregar al carrito', n)
+        

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Cursos Online</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="row justify-content-between">
+          <div class="col-4"><a href="/"><img class="d-block img-fluid" src="./img/logo_universidad.png" alt="logo"></a></div>
+          <div class="col-4 text-right pt-4"><a class="imagen-carrito" id="imagen-carrito" href="#"><img class="carrito" id="carrito" src="./img/shopping-cart.svg" alt="carrito">
+              <div class="carrito-de-compras" id="carrito-compras">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Imagen</th>
+                      <th>Nombre</th>
+                      <th>Precio</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+                <button class="btn btn-block btn-outline-secondary mt-3 text-uppercase" id="vaciar-carrito" type="button">Vaciar Carrito</button>
+              </div></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="banner d-flex align-items-center">
+      <div class="container">
+        <form class="formulario h" id="formulario" action="#">
+          <h2>Aprende algo nuevo</h2>
+          <p class="mt-3 mb-0">Todos los cursos a $15</p>
+          <div class="form-group">
+            <label for="busqueda"></label>
+            <input class="form-control" id="busqueda" type="search" placeholder="¿Que te gustaría aprender?"><span id="buscarCursos"><i class="fa fa-search"></i></span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <section class="containerDetalles">
+      <div class="container">
+        <div class="row justify-content-md-between text-center align-items-center">
+          <div class="col-12 col-md-4 mb-4 mb-md-0">
+            <div class="detalles d-flex align-items-center flex-column flex-md-row justify-content-center">
+              <figure class="pr-0 pr-md-4"><img src="img/focus.svg" alt="detalle 1"></figure>
+              <div class="detalles__infor">
+                <p class="m-0">20.000 cursos en línea</p>
+                <p class="m-0">Explora los temas mas recientes</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4 mb-md-0">
+            <div class="detalles d-flex align-items-center flex-column flex-md-row justify-content-center">
+              <figure class="pr-0 pr-md-4"><img src="img/target.svg" alt="detalle 2"></figure>
+              <div class="detalles__infor">
+                <p class="m-0">Instructores Expertos</p>
+                <p class="m-0">Aprende con distintos estilos</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4 mb-md-0">
+            <div class="detalles d-flex align-items-center flex-column flex-md-row justify-content-center">
+              <figure class="pr-0 pr-md-4"><img src="img/clock.svg" alt="detalle 3"></figure>
+              <div class="detalles__infor">
+                <p class="m-0">Acceso de por vida</p>
+                <p class="m-0">Aprende a tu ritmo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main class="main-container">
+      <h1>Cursos En Línea</h1>
+      <section class="courses" id="cursos">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card mb-5" id="card"><img class="card-img-top img-fluid d-block" src="img/angular.png" alt="angular"/>
+                <div class="card-body">
+                  <h3 class="card-title">Curso de Angular 6</h3>
+                  <p class="card-text">Jordy Tirado</p>
+                  <div class="star mb-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                  <div class="card-precio d-flex justify-content-between">
+                    <p class="card-precio__original">300</p>
+                    <p class="card-precio__descuento">$15</p>
+                  </div>
+                      <button class="agregar-carrito btn btn-primary btn-block text-uppercase text-center py-2" id="agregar-carrito" type="button" data-id="1">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card mb-5" id="card"><img class="card-img-top img-fluid d-block" src="img/bootstrap.jpeg" alt="bootstrap"/>
+                <div class="card-body">
+                  <h3 class="card-title">Curso de Bootstrap 4</h3>
+                  <p class="card-text">Jordy Tirado</p>
+                  <div class="star mb-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                  <div class="card-precio d-flex justify-content-between">
+                    <p class="card-precio__original">150</p>
+                    <p class="card-precio__descuento">$15</p>
+                  </div>
+                      <button class="agregar-carrito btn btn-primary btn-block text-uppercase text-center py-2" id="agregar-carrito" type="button" data-id="2">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card mb-5" id="card"><img class="card-img-top img-fluid d-block" src="img/foundation.jpg" alt="foundation"/>
+                <div class="card-body">
+                  <h3 class="card-title">Curso de Foundation 6</h3>
+                  <p class="card-text">Jordy Tirado</p>
+                  <div class="star mb-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                  <div class="card-precio d-flex justify-content-between">
+                    <p class="card-precio__original">200</p>
+                    <p class="card-precio__descuento">$15</p>
+                  </div>
+                      <button class="agregar-carrito btn btn-primary btn-block text-uppercase text-center py-2" id="agregar-carrito" type="button" data-id="3">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card mb-5" id="card"><img class="card-img-top img-fluid d-block" src="img/html5.jpg" alt="html5"/>
+                <div class="card-body">
+                  <h3 class="card-title">Curso de Html5</h3>
+                  <p class="card-text">Jordy Tirado</p>
+                  <div class="star mb-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                  <div class="card-precio d-flex justify-content-between">
+                    <p class="card-precio__original">100</p>
+                    <p class="card-precio__descuento">$15</p>
+                  </div>
+                      <button class="agregar-carrito btn btn-primary btn-block text-uppercase text-center py-2" id="agregar-carrito" type="button" data-id="4">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card mb-5" id="card"><img class="card-img-top img-fluid d-block" src="img/js.jpg" alt="javascript"/>
+                <div class="card-body">
+                  <h3 class="card-title">Curso de Javascript</h3>
+                  <p class="card-text">Jordy Tirado</p>
+                  <div class="star mb-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                  <div class="card-precio d-flex justify-content-between">
+                    <p class="card-precio__original">250</p>
+                    <p class="card-precio__descuento">$15</p>
+                  </div>
+                      <button class="agregar-carrito btn btn-primary btn-block text-uppercase text-center py-2" id="agregar-carrito" type="button" data-id="5">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card mb-5" id="card"><img class="card-img-top img-fluid d-block" src="img/reactjs.jpg" alt="reactjs"/>
+                <div class="card-body">
+                  <h3 class="card-title">Curso de ReactJS</h3>
+                  <p class="card-text">Jordy Tirado</p>
+                  <div class="star mb-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                  <div class="card-precio d-flex justify-content-between">
+                    <p class="card-precio__original">300</p>
+                    <p class="card-precio__descuento">$15</p>
+                  </div>
+                      <button class="agregar-carrito btn btn-primary btn-block text-uppercase text-center py-2" id="agregar-carrito" type="button" data-id="6">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card mb-5" id="card"><img class="card-img-top img-fluid d-block" src="img/sass.jpg" alt="sass"/>
+                <div class="card-body">
+                  <h3 class="card-title">Curso de Sass</h3>
+                  <p class="card-text">Jordy Tirado</p>
+                  <div class="star mb-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                  <div class="card-precio d-flex justify-content-between">
+                    <p class="card-precio__original">150</p>
+                    <p class="card-precio__descuento">$15</p>
+                  </div>
+                      <button class="agregar-carrito btn btn-primary btn-block text-uppercase text-center py-2" id="agregar-carrito" type="button" data-id="7">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card mb-5" id="card"><img class="card-img-top img-fluid d-block" src="img/css3.jpg" alt="css3"/>
+                <div class="card-body">
+                  <h3 class="card-title">Curso de CSS3</h3>
+                  <p class="card-text">Jordy Tirado</p>
+                  <div class="star mb-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                  <div class="card-precio d-flex justify-content-between">
+                    <p class="card-precio__original">200</p>
+                    <p class="card-precio__descuento">$15</p>
+                  </div>
+                      <button class="agregar-carrito btn btn-primary btn-block text-uppercase text-center py-2" id="agregar-carrito" type="button" data-id="8">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card mb-5" id="card"><img class="card-img-top img-fluid d-block" src="img/vuejs.jpg" alt="vuejs"/>
+                <div class="card-body">
+                  <h3 class="card-title">Curso de VueJS</h3>
+                  <p class="card-text">Jordy Tirado</p>
+                  <div class="star mb-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                  <div class="card-precio d-flex justify-content-between">
+                    <p class="card-precio__original">300</p>
+                    <p class="card-precio__descuento">$15</p>
+                  </div>
+                      <button class="agregar-carrito btn btn-primary btn-block text-uppercase text-center py-2" id="agregar-carrito" type="button" data-id="9">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/jquery.slim.js"></script>
+    <script src="./js/popper.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

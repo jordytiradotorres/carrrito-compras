@@ -1,0 +1,43 @@
+.main-container {
+    h1 {
+        text-align: center;
+        margin: 2rem 0;
+    }
+}
+
+section.courses {
+    .card {
+        &-img-top {
+            height: 300px;
+            @include small {
+                height: 200px;
+            }
+        }
+        &-body {
+            .star {
+                color: $color-amarillo;
+            }
+        }
+        &-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        &-text {
+            font-size: .9.5rem;
+            color: $color-gris;
+        }
+        &-precio {
+            &__original {
+                text-decoration: line-through;
+                color: $color-gris;
+            }
+            &__descuento {
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+        }
+        button.btn.btn-primary {
+            font-size: .9rem;
+        }
+    }
+}
